@@ -6,7 +6,6 @@ import io.quarkus.vertx.web.RouteBase;
 import io.smallrye.mutiny.Uni;
 
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.Size;
 
 @RouteBase(path = "/validate")
 public class ValidationOnResponseRouteHandler {

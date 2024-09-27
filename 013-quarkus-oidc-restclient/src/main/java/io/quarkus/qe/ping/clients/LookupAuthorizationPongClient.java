@@ -68,6 +68,6 @@ public interface LookupAuthorizationPongClient {
                 Collections.singletonMap("secret", clientSecret),
                 HttpClients.createDefault()));
 
-        return "Bearer " + authzClient.obtainAccessToken("test-user", "test-user").getToken();
+        return "Bearer " + authzClient.obtainAccessToken("alice", "alice").getToken();
     }
 }
