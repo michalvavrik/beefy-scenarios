@@ -25,13 +25,6 @@ public class ValidationOnResponseRouteHandler {
         return Uni.createFrom().item(response);
     }
 
-    @Route(methods = HttpMethod.GET, path = "/response-uni-invalid-string")
-    @Valid
-    @Size(min = 3, max = 3, message = "response must have 3 characters")
-    Uni<String> validateUniResponseWithStringReturnsInvalidSize() {
-        return Uni.createFrom().item("ASDASD");
-    }
-
     private static final Response createResponse() {
         Response response = new Response();
         response.setId("identifier");
